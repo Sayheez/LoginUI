@@ -1,0 +1,37 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+    background: linear-gradient(90deg, #4e24ac, #9fe);
+    font-size: 2rem;
+    color: rgb(153, 8, 148);
+}
+
+.container {
+    background: rgb(245, 245, 250);
+    padding-top: 2rem;
+    height: 100vh; 
+}
+
+.form {
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 23rem;
+    height: 55vh;
+    padding: 1rem;
+    padding-top: .8rem;
+    z-index: 1;
+    margin:8rem auto;
+}
