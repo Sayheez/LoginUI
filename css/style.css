@@ -49,3 +49,31 @@ body {
     margin: .1rem 0;
     text-transform: none;
 }
+
+.container .form .inputBox input:focus {
+    border: .1rem solid rgb(220, 197, 189);
+    background: rgb(231, 220, 216); 
+}
+.container .form .inputBox input::placeholder {
+    color: #817c7b;
+    padding-left: .8rem;
+}
+
+.container .form .btn {
+    display: block;
+    padding: 0.8rem 3rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    background: rgb(19, 94, 233);
+    border: .1rem solid rgb(240, 237, 236);
+    border-radius: .5rem;
+    cursor: pointer;
+    z-index: 0;
+    width: 99%;
+    position: relative;
+    overflow: hidden;
+}
+
