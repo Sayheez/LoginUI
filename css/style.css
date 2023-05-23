@@ -77,3 +77,54 @@ body {
     overflow: hidden;
 }
 
+.container .form .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    border-radius: .2rem;
+    background: orangered;
+    transition: .2s linear;
+    z-index: -1;
+}
+
+.container .form .btn:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+.container .form .btn:hover {
+    color: #fff;
+}
+
+.container .form .paragragh {
+    margin-left: 7rem;
+    color: rgb(19, 94, 233);
+    font-size: .9rem;
+    text-align: center;
+    text-transform: none; 
+    padding-top: 10rem;
+    pointer-events: visible;
+}
+
+.container .form .paragragh:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container .form hr {
+    border-bottom: .01rem solid rgba(0,0,0,0.1);
+    padding-bottom: 1.1rem;
+}
+
+.container .form #btn {
+    width: 55%; 
+    padding: 0.8rem .4rem;
+    color: #fff;
+    background: rgb(97, 173, 35);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1.6rem;
+}
