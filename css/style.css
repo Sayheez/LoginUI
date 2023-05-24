@@ -21,6 +21,7 @@ body {
     background: rgb(245, 245, 250);
     padding-top: 2rem;
     height: 100vh; 
+    position: relative;
 }
 
 .form {
@@ -128,6 +129,35 @@ body {
     margin-top: 1.6rem;
 }
 
+.form-modal {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close-modal {
+    font-size: 1.5rem;
+    position: absolute;
+    right: .5rem;
+    top: .25rem;
+    background: #fff;
+    
+}
+.close-modal:hover {
+    transform: rotate(360deg);
+}
+.overlay-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+}
+.hidden {
+    display: none;
+}
+
 @media (min-width: 280px) and (min-height: 653px) {
     .container .form .inputBox input {
         width: 100%;
@@ -178,6 +208,12 @@ body {
     .container .form #btn {
         width: 100%;   
     }
+    .form-modal {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 @media (min-width: 912px) and (min-height: 1368px) {
@@ -195,8 +231,21 @@ body {
     .container .form #btn {
         width: 100%;   
     }
+    .form-modal {
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
-
+@media (min-width: 1024px) and (min-height: 600px) {
+    .form-modal {
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 @media (min-width: 1280px) and (min-height: 800px) {
     .container .form .inputBox input {
         width: 100%;
@@ -204,7 +253,6 @@ body {
     }
     .form {
         max-width: 27rem;
-        /* height: 27vh; */
     }
     .container .form .paragragh {
         margin-left: 0.9rem;
