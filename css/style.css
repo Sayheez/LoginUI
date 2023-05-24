@@ -29,7 +29,6 @@ body {
     box-shadow: 0 .1rem .3rem rgba(0,0,0,0.2);
     width: 100%;
     max-width: 23rem;
-    height: 55vh;
     padding: 1rem;
     padding-top: 1.8rem;
     z-index: 1;
@@ -153,6 +152,40 @@ body {
     .form {
         max-width: 23rem;
         height: 42vh;
+    }
+    .container .form .paragragh {
+        margin-left: 0.9rem;
+    }
+    .container .form #btn {
+        width: 100%;   
+    }
+}
+
+@media (min-width: 412px) and (min-height: 896px) {
+    .container .form .inputBox input {
+        width: 100%;
+        font-size: .95rem;
+    }
+    .form {
+        max-width: 23rem;
+        height: 42vh;
+    }
+    .container .form .paragragh {
+        margin-left: 0.9rem;
+    }
+    .container .form #btn {
+        width: 100%;   
+    }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+    .container .form .inputBox input {
+        width: 100%;
+        font-size: .95rem;
+    }
+    .form {
+        max-width: 27rem;
+        height: 37vh;
     }
     .container .form .paragragh {
         margin-left: 0.9rem;
