@@ -100,7 +100,7 @@ body {
 }
 
 .container .form .paragragh {
-    margin-left: 7rem;
+    margin-left: 6rem;
     color: rgb(19, 94, 233);
     font-size: .9rem;
     text-align: center;
@@ -127,4 +127,20 @@ body {
     font-size: 1rem;
     font-weight: bold;
     margin-top: 1.6rem;
+}
+
+@media (min-width: 280px) and (min-height: 653px) {
+    .form {
+        width: 100%;
+        max-width: 15rem;
+        height: 55vh;
+    }
+}
+
+@media (min-width: 375px) and (min-height: 667px) {
+    .form {
+        width: 100%;
+        max-width: 20rem;
+        height: 55vh;
+    }
 }
