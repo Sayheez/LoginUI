@@ -145,10 +145,19 @@ body {
     }
 }
 
-@media (min-width: 375px) and (min-height: 667px) {
-    .form {
+@media (min-width: 414px) and (min-height: 896px) {
+    .container .form .inputBox input {
         width: 100%;
-        max-width: 20rem;
-        height: 55vh;
+        font-size: .95rem;
+    }
+    .form {
+        max-width: 23rem;
+        height: 42vh;
+    }
+    .container .form .paragragh {
+        margin-left: 0.9rem;
+    }
+    .container .form #btn {
+        width: 100%;   
     }
 }
