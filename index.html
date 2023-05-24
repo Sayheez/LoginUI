@@ -1,5 +1,5 @@
 <!-- 
-    Name: Seyi samuel
+    Name: Seyi Samuel
     Description: Using HTML5 to create a skeletal framework for a user login page.
     Date: 23.05.2023
  -->
@@ -11,15 +11,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN-PAGE</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <form class="form" action="" method="post" id="sign-in">
             <div class="inputBox">
-                <input type="email" placeholder="Email address or phone number" name="" id="emailId" required>
+                <input type="email" placeholder="Email address or phone number" id="emailId" required>
             </div>
             <div class="inputBox">
-                <input type="password" placeholder="Password" name="" id="passwordId" required>
+                <input type="password" placeholder="Password" id="passwordId" required>
             </div>
 
             <button class="btn"  type="submit">log in</button>
@@ -27,31 +28,29 @@
                 <a href="#" class="paragragh">Forgotten password?</a>
                 <hr>
             </div>
-            <button id="btn" class="btn"  type="submit">create new account</button>
+            <button id="btn" class="btn signup"  type="submit">create new account</button>
         </form>
 
-        <form class="form" action="" method="post" id="sign-up">
+        <form class="form form-modal hidden" action="" method="post" id="sign-up">
+            <button class="close-modal">&times;</button>
             <div class="inputBox">
-                <input type="text" placeholder="First name" name="" id="first-name" required>
+                <input type="text" placeholder="First name" id="first-name" required>
             </div>
             <div class="inputBox">
-                <input type="text" placeholder="Last name" name="" id="last-name" required>
+                <input type="text" placeholder="Last name" id="last-name" required>
             </div>
             <div class="inputBox">
-                <input type="email" placeholder="Email address" name="" id="emailId" required>
+                <input type="email" placeholder="Email address" id="emailId2" required>
             </div>
             <div class="inputBox">
-                <input type="password" placeholder="Password" name="" id="passwordId" required>
+                <input type="password" placeholder="Password" name="" id="passwordId2a" required>
             </div>
             <div class="inputBox">
-                <input type="password" placeholder="Confirm Password" name="" id="passwordId2" required>
+                <input type="password" placeholder="Confirm Password" name="" id="passwordId2b" required>
             </div>
             <button class="btn" type="submit">Sign up</button>
-            <!-- <div class="inputBox">
-                <a href="#" class="paragragh">Already have an account?</a>
-                <hr>
-            </div> -->
         </form>
+        <div class="overlay-bg hidden"></div>
     </div>
 </body>
 </html>
